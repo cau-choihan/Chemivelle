@@ -1,2 +1,52 @@
+body{
+    font-family: 'Gowun Batang', serif;
+}
+h1{
+    font-size:70px;
+}
+a {
+    text-decoration:none;
+    color:black;
+}
+/* header */
+header{
+    width:800px;
+    margin:0 auto;
+    position : relative;
+    border-bottom: 1px solid #c8c8c8;
+}
+header .inner{
+}
+header .logo{
+    position : absolute;
+    margin : auto;
+}
+header #headerMenu .menu{
+    display:flex;
+    position:absolute;
+    top:10px;
+    right:0;
+    margin:auto;
+}
+header #headerMenu .menu li{
+ position : relative;
+}   
+header #headerMenu .menu li::before{
+ content:"";
+ display:block;
+ width:1px;
+ height:12px;
+ background-color:black;
+ position:absolute;
+ top:0;
+ bottom:0;
+ margin : auto;
+}
+header #headerMenu .menu li a{
+    font-size:18px;
+    padding:11px 16px;
+    display:block;
+    font-weight:bold;
+}
 
 /*# sourceMappingURL=/main.c52e0fe2.css.map */
