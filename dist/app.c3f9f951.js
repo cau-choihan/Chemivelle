@@ -117,17 +117,19 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"app.js":[function(require,module,exports) {
+})({"js/app.js":[function(require,module,exports) {
 var container = document.getElementById("root");
 var headerBottomMenu = document.getElementById("headerBottomMenu"); // header
 // header top menu
-//header bottom menu
+
+var headerTopMenu = ["Studio Nouvelle", "The alchemist"]; //header bottom menu
 
 var bottomMenuList = ["ABOUT", "MUSIC", "MEMBERS", "GOODS", "CONTACT"];
 
 for (var i = 0; i < 5; i++) {
   console.log(bottomMenuList[i]);
-}
+} //메뉴 템플릿으로 지정할 것
+
 /*
 function temp(){
     for(let i=0;i<5;i++){
@@ -168,7 +170,17 @@ function headerBottomMenu(){
 </li>`
 }
 */
+// section
 
+
+new Swiper('.swiper-container', {
+  pagination: '.swiper-pagination',
+  slidesPerView: 'auto',
+  centeredSlides: true,
+  autoplay: true,
+  spaceBetween: 1,
+  loop: true
+});
 
 function router() {
   container.innerHTML = "\n";
@@ -201,7 +213,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "64373" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57870" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -376,5 +388,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","app.js"], null)
-//# sourceMappingURL=/app.c328ef1a.js.map
+},{}]},{},["../../../AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/app.js"], null)
+//# sourceMappingURL=/app.c3f9f951.js.map

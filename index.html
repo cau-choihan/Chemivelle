@@ -1,59 +1,231 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:type" content="website" />
-    <meta property="og:site_name" content="Chemivelle" />
-    <meta property="og:title" content="Chemivelle" />
-    <meta property="og:description" content="음악하는팀, Chemivelle입니다." />
-    <meta property="og:image" content="./images/favicon.png" />
-    <meta property="og:url" content="https://starbucks.co.kr" />
+        <meta property="og:type" content="website"/>
+        <meta property="og:site_name" content="Chemivelle"/>
+        <meta property="og:title" content="Chemivelle"/>
+        <meta property="og:description" content="음악하는팀, Chemivelle입니다."/>
+        <meta property="og:image" content="./images/favicon.png"/>
+        <meta property="og:url" content="https://starbucks.co.kr"/>
 
-    <title>Chemivelle Official</title>
-    <link rel="icon" href="./images/favicon.png">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap" rel="stylesheet">
+        <title>Chemivelle Official</title>
+        <link rel="icon" href="./images/favicon.png">
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin="crossorigin">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Gowun+Batang:wght@400;700&display=swap"
+            rel="stylesheet">
 
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-    <div id="root">
-        <!-- header -->
-        <header>
-            <div class="inner">
-                <a href="/" class="logo">
-                    <img width="800px" src="./images/facebook_cover_photo_1.png" alt="The Chemivelle">
-                </a>
-            </div>
-            
-        <div id="headerMenu">
-            <ul class="menu">
-                <li><a href="#">about</a></li>
-                <li><a href="#">music</a></li>
-                <li><a href="#">members</a></li>
-                <li><a href="#">photo</a></li>
-                <li><a href="#">contact</a></li>
-            </ul>
+        <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"/>
+
+        <link rel="stylesheet" href="./css/main.css">
+
+        <!-- swiper -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+        <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    </head>
+    <body>
+        <div id="root">
+            <!-- header -->
+            <header>
+                <!-- logo -->
+                <div class="inner" id="fade-in">
+                    <a href="#" class="logo">
+                        <img width="300px" src="./images/The chemivelle logo.png" alt="The chemivelle">
+                    </a>
+
+                    <!-- header top menu -->
+                    <div class="sub-menu">
+                        <ul class="menu">
+                            <li>
+                                <a href="#">Studio Nouvelle</a>
+                            </li>
+                            <li>
+                                <span class="material-symbols-outlined">
+                                    handshake
+                                </span>
+                            </li>
+                            <li>
+                                <a href="#">The alchemist</a>
+                            </li>
+                        </ul>
+                        <div class="enterIcon"></div>
+                    </div>
+                    <!-- header bottom menu -->
+                    <ul class="main-menu" id="headerBottomMenu">
+                        <li class="item">
+                            <div class="item__name">ABOUT</div>
+                            <div class="item__contents">
+                                <div class="contents__menu">
+                                    <ul class="inner">
+                                        <li>
+                                            <h4>Executives</h4>
+                                            <ul>
+                                                <li>Main Director 'Wiive'</li>
+                                                <li>Main developer '최한(?)'</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <h4>Studio Nouvelle</h4>
+                                            <ul>
+                                                <li>We are</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <h4>The alchemist</h4>
+                                            <ul>
+                                                <li>We are</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item__name">PRODUCTS</div>
+                            <div class="item__contents">
+                                <div class="contents__menu">
+                                    <ul class="inner">
+                                        <li>
+                                            <h4>Musics</h4>
+                                            <ul>
+                                                <li>Album</li>
+                                                <li>EP</li>
+                                                <li>Single</li>
+                                                <li>Unreleased</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <h4>Videos</h4>
+                                            <ul>
+                                                <li>M/V</li>
+                                                <li>Youtube</li>
+                                                <li>Podcast</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <h4>추가할 컨텐츠 타이틀</h4>
+                                            <ul>
+                                                <li>추가할 컨텐츠</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item__name">MEMBERS</div>
+                            <div class="item__contents">
+                                <div class="contents__menu">
+                                    <ul class="inner">
+                                        <li>
+                                            <h4>Studio Nouvelle</h4>
+                                            <ul>
+                                                <li>너무 많아서 초안 생략</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <h4>The alchemist</h4>
+                                            <ul>
+                                                <li>너무 많아서 초안 생략</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item__name">GOODS</div>
+                            <div class="item__contents">
+                                <div class="contents__menu">
+                                    <ul class="inner">
+                                        <li>
+                                            <h4>Poster</h4>
+                                            <ul>
+                                                <li>김준현 단독공연 포스터</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <h4>Photo</h4>
+                                            <ul>
+                                                <li>김준현 포토카드</li>
+                                            </ul>
+                                        </li>
+                                        <li>
+                                            <h4>Item</h4>
+                                            <ul>
+                                                <li>김준현 사인 기타</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <div class="item__name">CONTACT</div>
+                            <div class="item__contents">
+                                <div class="contents__menu">
+                                    <ul class="inner">
+                                        <li>
+                                            <h4>Contact us</h4>
+                                            <ul>
+                                                <li>Email</li>
+                                            </ul>
+                                            <ul>
+                                                <li>Instargram</li>
+                                            </ul>
+                                            <ul>
+                                                <li>contact 디자인은 더 생각해봄</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+
+            <!-- visual -->
+            <section>
+                <div class="banner">
+                    <div class="swiper-container inner">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./images/banner1.jpg" alt="마이크&큐베이스">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/banner2.jpg" alt="마스터 키보드">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/banner3.jpg" alt="패드">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/banner4.jpg" alt="기타">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./images/banner5.jpg" alt="전자드럼">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <footer></footer>
         </div>
-        </header>   
-
-            <!-- <div class="innerTitle">
-                    <br><br>
-                Team Chemivelle Official.
-                <br><br>팀 케미벨 공식사이트
-                    <span class="material-symbols-outlined" style="font-size:35px;">
-                        volume_up
-                    </span>
-                </div> -->     
-    </div>
-</body>
-<script src="app.js" type="module"></script>
+    </body>
+    <script src="./js/app.js" type="module"></script>
 </html>
