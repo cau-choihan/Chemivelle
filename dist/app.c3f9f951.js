@@ -133,53 +133,31 @@ for (var i = 0; i < 5; i++) {
 /*
 function temp(){
     for(let i=0;i<5;i++){
-        headerBottomMenu.innerHTML = <li class="item">
+        headerBottomMenu.innerHTML = `<li class="item">
             <div class="item__name">
                 ${bottomMenuList[i]}
             </div>
         <div class="item__contents"></div>
-    </li>}
+    </li>`}
 }
 */
 
-/*
-function headerBottomMenu(){
-    
-    headerBottomMenu.innerHTML=`
-    <li class="item">
-    <div class="item__name">ABOUT</div>
-    <div class="item__contents">
-        
-    </div>
-</li>
-<li class="item">
-    <div class="item__name">MUSIC</div>
-    <div class="item__contents"></div>
-</li>
-<li class="item">
-    <div class="item__name">MEMBERS</div>
-    <div class="item__contents"></div>
-</li>
-<li class="item">
-    <div class="item__name">GOODS</div>
-    <div class="item__contents"></div>
-</li>
-<li class="item">
-    <div class="item__name">CONTACT</div>
-    <div class="item__contents"></div>
-</li>`
-}
-*/
-// section
+
+function headerBottomMenu1() {
+  for (var _i = 0; _i < 5; _i++) {
+    headerBottomMenu.innerHTML += "\n    <li class=\"item\">\n    <div class=\"item__name\">".concat(bottomMenuList[_i], "</div>\n    <div class=\"item__contents\">\n    ");
+  }
+} // section
 
 
 new Swiper('.swiper-container', {
-  pagination: '.swiper-pagination',
-  slidesPerView: 'auto',
-  centeredSlides: true,
-  autoplay: true,
-  spaceBetween: 1,
-  loop: true
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: false
+  },
+  speed: 3000,
+  loop: true,
+  autoplay: true
 });
 
 function router() {
@@ -213,7 +191,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57870" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50971" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

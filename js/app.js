@@ -20,50 +20,33 @@ for(let i=0;i<5;i++){
 /*
 function temp(){
     for(let i=0;i<5;i++){
-        headerBottomMenu.innerHTML = <li class="item">
+        headerBottomMenu.innerHTML = `<li class="item">
             <div class="item__name">
                 ${bottomMenuList[i]}
             </div>
         <div class="item__contents"></div>
-    </li>}
+    </li>`}
 }
 */
-/*
-function headerBottomMenu(){
-    
-    headerBottomMenu.innerHTML=`
+function headerBottomMenu1(){
+    for(let i=0;i<5;i++){
+    headerBottomMenu.innerHTML+=`
     <li class="item">
-    <div class="item__name">ABOUT</div>
+    <div class="item__name">${bottomMenuList[i]}</div>
     <div class="item__contents">
-        
-    </div>
-</li>
-<li class="item">
-    <div class="item__name">MUSIC</div>
-    <div class="item__contents"></div>
-</li>
-<li class="item">
-    <div class="item__name">MEMBERS</div>
-    <div class="item__contents"></div>
-</li>
-<li class="item">
-    <div class="item__name">GOODS</div>
-    <div class="item__contents"></div>
-</li>
-<li class="item">
-    <div class="item__name">CONTACT</div>
-    <div class="item__contents"></div>
-</li>`
+    `
+    }
 }
-*/
 
 // section
-new Swiper('.swiper-container',{ pagination: '.swiper-pagination',
-slidesPerView: 'auto',
-centeredSlides: true,
+new Swiper('.swiper-container',{ 
+    pagination: {
+        el : '.swiper-pagination',
+        clickable : false,
+},
+speed:3000,
+loop:true,
 autoplay:true,
-spaceBetween: 1,
-    loop:true,
 });
 
 function router(){

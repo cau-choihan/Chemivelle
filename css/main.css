@@ -5,6 +5,8 @@ body {
     font-weight: 400;
     line-height: 1.4;
     color: black;
+    overflow-x:hidden;
+    overflow-y:auto;
 }
 a {
     text-decoration: none;
@@ -164,15 +166,27 @@ header .main-menu .item .item__contents .contents__menu > ul > li ul li:hover{
 }
 .swiper-slide{
   z-index:-1;
-  height:100px;
+  height:50%;
   display:flex;
+  background-color:black;
+}
+#slide-logo{
+  height:533px;
 }
 .swiper-slide a{
   z-index:-1;
   color:white;
 }
 .banner{
-  height:530px;
+  margin-left:25%;
+}
+.banner .banner-inner{
+  width:100%;
   position:relative;
-  text-align:center;
+}
+.promotion{
+  
+}
+.promotion .swiper-container{
+  
 }
